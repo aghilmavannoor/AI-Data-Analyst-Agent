@@ -1,4 +1,4 @@
-# 🤖 AI Data Analyst Agent
+#  AI Data Analyst Agent
 
 An AI-powered data analysis agent that allows users to explore e-commerce sales data using natural language.
 
@@ -10,9 +10,9 @@ The agent understands the question, routes it through a LangGraph workflow, gene
 
 ---
 
-## 📸 Demo
+##  Demo
 
-### 📊 Interactive Dashboard
+###  Interactive Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
 
@@ -20,7 +20,7 @@ Interactive dashboard with KPIs, filters, revenue analysis, and natural-language
 
 ---
 
-### 💰 Revenue by Category
+###  Revenue by Category
 
 ![Revenue by Category](screenshots/revenue-by-category.png)
 
@@ -28,7 +28,7 @@ Visualize revenue distribution across different product categories.
 
 ---
 
-### 📈 Monthly Revenue Trend
+###  Monthly Revenue Trend
 
 ![Monthly Revenue](screenshots/monthly-revenue.png)
 
@@ -36,7 +36,7 @@ Analyze monthly revenue patterns across 2025 and 2026.
 
 ---
 
-### 🤖 AI Data Analysis
+###  AI Data Analysis
 
 ![AI Analysis](screenshots/ai-analysis.png)
 
@@ -44,7 +44,7 @@ Ask business questions in natural language and receive structured data results a
 
 ---
 
-### 🧠 Conversational Memory
+###  Conversational Memory
 
 ![Conversational Memory](screenshots/conversational-memory.png)
 
@@ -52,7 +52,7 @@ The agent maintains context across follow-up questions, allowing users to refine
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 - 💬 **Natural Language Data Analysis**
 - 🤖 **Ollama + Qwen3:8b**
@@ -72,7 +72,7 @@ The agent maintains context across follow-up questions, allowing users to refine
 
 ---
 
-# 🏗️ Architecture
+Architecture
 
 ```text
                          ┌─────────────────────┐
@@ -151,7 +151,7 @@ The agent maintains context across follow-up questions, allowing users to refine
 
 
 
-📁 Project Structure
+Project Structure
 
 AI-Data-Analyst-Agent/
 │
