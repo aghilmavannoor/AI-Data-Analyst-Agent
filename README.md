@@ -1,4 +1,4 @@
-# 🤖 AI Data Analyst Agent
+#  AI Data Analyst Agent
 
 An AI-powered data analysis agent that allows users to explore e-commerce sales data using natural language.
 
@@ -10,29 +10,29 @@ The agent understands the question, routes it through a LangGraph workflow, gene
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 💬 Natural Language Data Analysis
-- 🤖 Ollama + Qwen3:8b
-- 🧠 LangGraph Agent Workflow
-- 🔀 Intelligent Question Routing
-- 📝 Natural Language → SQL Generation
-- ✅ SQL Validation and Safety Checks
-- 🔄 SQL Error Recovery and Retry
-- 🧮 Deterministic Data Analysis
-- 📊 Dynamic Chart Generation
-- 💡 Business Insight Generation
-- 🧠 Conversational Follow-up Memory
-- 🎛️ Interactive Dashboard Filters
-- 📥 CSV Data Export
-- 🗄️ SQLite E-commerce Database
-- 🌐 Streamlit Web Interface
+-  Natural Language Data Analysis
+-  Ollama + Qwen3:8b
+-  LangGraph Agent Workflow
+-  Intelligent Question Routing
+-  Natural Language → SQL Generation
+-  SQL Validation and Safety Checks
+-  SQL Error Recovery and Retry
+-  Deterministic Data Analysis
+-  Dynamic Chart Generation
+-  Business Insight Generation
+-  Conversational Follow-up Memory
+-  Interactive Dashboard Filters
+-  CSV Data Export
+-  SQLite E-commerce Database
+-  Streamlit Web Interface
 
 ---
 
-# 📸 Demo
+#  Demo
 
-## 📊 Interactive Dashboard
+##  Interactive Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
 
@@ -40,7 +40,7 @@ Interactive dashboard with KPIs, filters, revenue analysis, and natural-language
 
 ---
 
-## 💰 Revenue by Category
+##  Revenue by Category
 
 ![Revenue by Category](screenshots/revenue-by-category.png)
 
@@ -48,7 +48,7 @@ Visualize revenue distribution across different e-commerce product categories.
 
 ---
 
-## 📈 Monthly Revenue Trend
+##  Monthly Revenue Trend
 
 ![Monthly Revenue](screenshots/monthly-revenue.png)
 
@@ -56,7 +56,7 @@ Analyze monthly revenue patterns across 2025 and 2026.
 
 ---
 
-## 🤖 AI Data Analysis
+##  AI Data Analysis
 
 ![AI Analysis](screenshots/ai-analysis.png)
 
@@ -64,7 +64,7 @@ Ask business questions in natural language and receive structured data results a
 
 ---
 
-## 🧠 Conversational Memory
+##  Conversational Memory
 
 ![Conversational Memory](screenshots/conversational-memory.png)
 
@@ -72,7 +72,7 @@ The agent maintains context across follow-up questions, allowing users to refine
 
 ---
 
-# 🏗️ Architecture
+#  Architecture
 
 ```text
                          ┌─────────────────────┐
@@ -145,7 +145,7 @@ The agent maintains context across follow-up questions, allowing users to refine
                          └─────────────────────┘
 
 
-## 🧠 How It Works
+# How It Works
 
 The AI Data Analyst Agent follows a structured multi-step workflow instead of sending every question directly to an LLM.
 
@@ -193,7 +193,7 @@ No SQL knowledge is required from the user.
 
 ---
 
-## 2️⃣ 🧠 Conversation Memory
+## 2️⃣  Conversation Memory
 
 The agent maintains context across follow-up questions.
 
@@ -213,7 +213,7 @@ The system resolves these follow-ups into meaningful analytical questions while 
 
 ---
 
-## 3️⃣ 🔀 Question Routing
+## 3️⃣  Question Routing
 
 The router determines which capabilities are required for the user's question.
 
@@ -228,7 +228,7 @@ This prevents unnecessary processing when a question only requires a database qu
 
 ---
 
-## 4️⃣ 📝 SQL Generation
+## 4️⃣  SQL Generation
 
 Qwen3:8b generates SQL based on:
 
@@ -242,7 +242,7 @@ The generated query is then passed to the validation layer before execution.
 
 ---
 
-## 5️⃣ 🛡️ SQL Validation
+## 5️⃣  SQL Validation
 
 Generated SQL is validated before reaching the database.
 
@@ -264,7 +264,7 @@ This provides an additional safety layer around LLM-generated SQL.
 
 ---
 
-## 6️⃣ 🗄️ SQL Execution
+## 6️⃣  SQL Execution
 
 Validated SQL queries are executed against the SQLite e-commerce database.
 
@@ -272,28 +272,28 @@ The query result is converted into a structured Pandas DataFrame for downstream 
 
 ---
 
-## 7️⃣ 📊 Data Analysis
+## 7️⃣  Data Analysis
 
 Numerical and analytical operations are handled deterministically using Python rather than relying entirely on the LLM.
 
 Supported operations include:
 
-- ➕ Sum
-- 📐 Average
-- 🔝 Maximum
-- 🔻 Minimum
-- 🔢 Count
-- ↕️ Sorting
-- 🏆 Top-N analysis
-- 📊 Percentage calculations
-- ⚖️ Comparisons
-- 📅 Year-over-year analysis
+-  Sum
+-  Average
+-  Maximum
+-  Minimum
+-  Count
+-  Sorting
+-  Top-N analysis
+-  Percentage calculations
+-  Comparisons
+-  Year-over-year analysis
 
 This separation helps keep numerical calculations consistent and reproducible.
 
 ---
 
-## 8️⃣ 📈 Visualization
+## 8️⃣  Visualization
 
 When a question requires a visualization, the agent generates a Plotly chart based on the returned data and analytical intent.
 
@@ -307,7 +307,7 @@ Examples include:
 
 ---
 
-## 9️⃣ 💡 Business Insight
+## 9️⃣  Business Insight
 
 The system converts analytical results into concise business-oriented explanations.
 
@@ -327,21 +327,21 @@ This makes the output easier to understand than returning raw SQL results alone.
 The Streamlit interface presents the complete analytical response:
 
 ```text
-💡 AI Insight
-📊 Data Result
-📈 Visualization
-🔍 Generated SQL
-🔀 Agent Route
-📥 CSV Export
+ AI Insight
+ Data Result
+ Visualization
+ Generated SQL
+ Agent Route
+ CSV Export
 ```
 
 ---
 
-# 💬 Example Questions
+#  Example Questions
 
 The agent supports a range of natural-language business questions.
 
-## 💰 Basic Analysis
+##  Basic Analysis
 
 ```text
 What is the total revenue?
@@ -357,7 +357,7 @@ Which product generated the highest revenue?
 
 ---
 
-## 🏆 Product Analysis
+##  Product Analysis
 
 ```text
 What are the top 5 products by revenue?
@@ -369,7 +369,7 @@ Which product sold the most units?
 
 ---
 
-## 📦 Category Analysis
+##  Category Analysis
 
 ```text
 Show revenue by category.
@@ -381,7 +381,7 @@ Compare Laptop and Smartphone revenue.
 
 ---
 
-## 📅 Time-Based Analysis
+##  Time-Based Analysis
 
 ```text
 Show monthly revenue trend.
@@ -397,7 +397,7 @@ Compare revenue between 2025 and 2026.
 
 ---
 
-## 📊 Percentage Analysis
+##  Percentage Analysis
 
 ```text
 What percentage of total revenue comes from Laptop?
@@ -405,7 +405,7 @@ What percentage of total revenue comes from Laptop?
 
 ---
 
-## 🧠 Conversational Analysis
+##  Conversational Analysis
 
 The agent can maintain context across multiple questions:
 
@@ -423,7 +423,7 @@ Instead of repeating the complete question, users can naturally refine their ana
 
 ---
 
-# 🎛️ Interactive Dashboard
+#  Interactive Dashboard
 
 The Streamlit dashboard provides interactive filtering capabilities.
 
@@ -431,9 +431,9 @@ The Streamlit dashboard provides interactive filtering capabilities.
 
 | Filter | Description |
 |---|---|
-| 📅 Year | Filter sales by year |
-| 📦 Category | Filter products by category |
-| 🌍 Region | Filter customers by region |
+|  Year | Filter sales by year |
+|  Category | Filter products by category |
+|  Region | Filter customers by region |
 
 These dashboard filters are also passed into AI-generated questions.
 
@@ -455,7 +455,7 @@ The generated SQL incorporates the active dashboard filters so that the AI analy
 
 ---
 
-# 📊 Supported Analysis
+#  Supported Analysis
 
 | Analysis | Example |
 |---|---|
@@ -474,25 +474,25 @@ The generated SQL incorporates the active dashboard filters so that the AI analy
 
 ---
 
-# 🛠️ Tech Stack
+#  Tech Stack
 
 | Technology | Role |
 |---|---|
-| 🐍 **Python** | Core programming language |
-| 🦙 **Ollama** | Local LLM runtime |
-| 🤖 **Qwen3:8b** | Natural-language reasoning and SQL generation |
-| 🧠 **LangGraph** | Agent workflow orchestration |
-| 🔗 **LangChain** | LLM application components |
-| 🗄️ **SQLite** | E-commerce database |
-| 🔌 **SQLAlchemy** | Database connectivity |
-| 🐼 **Pandas** | Data processing and analysis |
-| 🔢 **NumPy** | Numerical operations |
-| 📈 **Plotly** | Interactive visualizations |
-| 🌐 **Streamlit** | Web application and dashboard |
+|  **Python** | Core programming language |
+|  **Ollama** | Local LLM runtime |
+|  **Qwen3:8b** | Natural-language reasoning and SQL generation |
+|  **LangGraph** | Agent workflow orchestration |
+|  **LangChain** | LLM application components |
+|  **SQLite** | E-commerce database |
+|  **SQLAlchemy** | Database connectivity |
+|  **Pandas** | Data processing and analysis |
+|  **NumPy** | Numerical operations |
+|  **Plotly** | Interactive visualizations |
+|  **Streamlit** | Web application and dashboard |
 
 ---
 
-# 📁 Project Structure
+#  Project Structure
 
 ```text
 AI-Data-Analyst-Agent/
@@ -536,7 +536,7 @@ AI-Data-Analyst-Agent/
 
 ---
 
-# ⚙️ Installation & Setup
+#  Installation & Setup
 
 ## 1. Clone the Repository
 
@@ -573,7 +573,7 @@ pip install -r requirements.txt
 
 ---
 
-# 🤖 Ollama Setup
+#  Ollama Setup
 
 This project uses **Qwen3:8b locally through Ollama**.
 
@@ -599,7 +599,7 @@ Make sure Ollama is running before starting the application.
 
 ---
 
-# ▶️ Run the Application
+#  Run the Application
 
 From the project root:
 
@@ -615,17 +615,17 @@ http://localhost:8501
 
 ---
 
-# 🔐 SQL Safety
+#  SQL Safety
 
 The application validates LLM-generated SQL before execution.
 
 ### Safety Layer
 
-- ✅ Allows analytical `SELECT` queries
-- 🚫 Blocks data modification queries
-- 🚫 Blocks schema modification queries
-- 🛡️ Prevents accidental database changes
-- 🔄 Supports SQL recovery when generated queries fail
+-  Allows analytical `SELECT` queries
+-  Blocks data modification queries
+-  Blocks schema modification queries
+-  Prevents accidental database changes
+-  Supports SQL recovery when generated queries fail
 
 ### Blocked Operations
 
@@ -643,7 +643,7 @@ TRUNCATE
 
 ---
 
-# 🔄 SQL Error Recovery
+#  SQL Error Recovery
 
 LLM-generated SQL can occasionally contain syntax or schema errors.
 
@@ -679,7 +679,7 @@ This allows the agent to recover from certain SQL generation failures without im
 
 ---
 
-# 🧠 Conversational Memory
+#  Conversational Memory
 
 The agent supports contextual follow-up questions.
 
@@ -709,44 +709,44 @@ Users can refine their analysis without repeatedly writing the complete question
 
 ---
 
-# 📥 Data Export
+#  Data Export
 
 Analysis results can be downloaded as CSV files directly from the Streamlit interface.
 
 This allows users to continue working with the results in:
 
-- 📗 Excel
-- 📊 Power BI
-- 📈 Tableau
-- 🐍 Python
-- 🐼 Pandas
+-  Excel
+-  Power BI
+-  Tableau
+-  Python
+-  Pandas
 
 ---
 
-# 📌 Example Results
+#  Example Results
 
 The included sample e-commerce dataset produces results such as:
 
-## 💰 Total Revenue
+##  Total Revenue
 
 ```text
 ₹343,451,000
 ```
 
-## 🧾 Total Orders
+##  Total Orders
 
 ```text
 5,000
 ```
 
-## 🏆 Highest Revenue Product
+##  Highest Revenue Product
 
 ```text
 Gaming Laptop
 ₹71,630,000
 ```
 
-## 🥇 Top 5 Products by Revenue
+##  Top 5 Products by Revenue
 
 | Rank | Product | Revenue |
 |---:|---|---:|
@@ -756,7 +756,7 @@ Gaming Laptop
 | 4 | Smartphone Pro | ₹36,905,000 |
 | 5 | Smartphone X | ₹31,185,000 |
 
-## 📉 Revenue Comparison
+##  Revenue Comparison
 
 | Year | Revenue |
 |---|---:|
@@ -768,15 +768,15 @@ Gaming Laptop
 
 ---
 
-# 🔍 Technical Highlights
+#  Technical Highlights
 
-## 🧠 Agentic Workflow
+##  Agentic Workflow
 
 LangGraph orchestrates the multi-step analytical workflow, allowing different operations to be conditionally executed depending on the user's question.
 
 ---
 
-## 🦙 Local LLM
+##  Local LLM
 
 Qwen3:8b runs locally through Ollama.
 
@@ -784,7 +784,7 @@ This allows the application to perform natural-language understanding and SQL ge
 
 ---
 
-## ⚡ Hybrid AI + Deterministic Analysis
+##  Hybrid AI + Deterministic Analysis
 
 The system separates LLM responsibilities from numerical computation.
 
@@ -809,7 +809,7 @@ This approach keeps numerical calculations in deterministic Python logic rather 
 
 ---
 
-## 🧩 Modular Architecture
+##  Modular Architecture
 
 The project separates responsibilities into independent modules:
 
@@ -830,7 +830,7 @@ This makes the application easier to maintain, test, and extend.
 
 ---
 
-# ⚠️ Limitations
+#  Limitations
 
 - Uses a local SQLite database
 - Qwen3:8b runs locally through Ollama
@@ -843,27 +843,27 @@ This makes the application easier to maintain, test, and extend.
 
 ---
 
-# 🔮 Future Improvements
+#  Future Improvements
 
 The project can be extended with:
 
-- ☁️ Cloud deployment with a hosted LLM
-- 🗄️ PostgreSQL / MySQL support
-- 📄 CSV and Excel file uploads
-- 📚 RAG-based business documentation
-- 🔐 User authentication
-- 🛡️ Advanced SQL sandboxing
-- 📊 More advanced visualization recommendations
-- 📈 Forecasting and predictive analytics
-- 💬 Multi-user conversation sessions
-- ⚡ Query caching
-- 📋 Automated report generation
-- 🧪 Expanded unit and integration testing
-- 📡 Production monitoring and logging
+-  Cloud deployment with a hosted LLM
+-  PostgreSQL / MySQL support
+-  CSV and Excel file uploads
+-  RAG-based business documentation
+-  User authentication
+-  Advanced SQL sandboxing
+-  More advanced visualization recommendations
+-  Forecasting and predictive analytics
+-  Multi-user conversation sessions
+-  Query caching
+-  Automated report generation
+-  Expanded unit and integration testing
+-  Production monitoring and logging
 
 ---
 
-# 🎯 Project Goal
+#  Project Goal
 
 The goal of this project is to demonstrate how modern AI techniques can be combined with traditional data engineering and analytics tools to build a practical **AI-powered Data Analyst**.
 
@@ -898,25 +898,21 @@ The project combines **Generative AI, agentic workflows, SQL, data analysis, and
 
 ---
 
-# 👨‍💻 Author
+#  Author
 
 ## Aghil
 
 Aspiring **Data Scientist / AI Engineer** with an interest in:
 
-- 🤖 Artificial Intelligence
-- ✨ Generative AI
-- 🧠 LLM Applications
-- 🔀 AI Agents
-- 📊 Data Science
-- 🤖 Machine Learning
-- 📈 Data Analytics
-- 🐍 Python
+-  Artificial Intelligence
+-  Generative AI
+-  LLM Applications
+-  AI Agents
+-  Data Science
+-  Machine Learning
+-  Data Analytics
+-  Python
 
----
 
-## ⭐ Support
-
-If you find this project useful or interesting, consider giving the repository a ⭐ on GitHub.
 
 **Built with Python, LangGraph, Ollama, Qwen3, SQL, and Streamlit.**
