@@ -145,7 +145,7 @@ The agent maintains context across follow-up questions, allowing users to refine
                          └─────────────────────┘
 
 
-# 🧠 How It Works
+## 🧠 How It Works
 
 The AI Data Analyst Agent follows a structured multi-step workflow instead of sending every question directly to an LLM.
 
